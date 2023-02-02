@@ -17,7 +17,7 @@ def read_file(filename: str) -> list:
         list_of_digits.append(int(i))
 
     # Read the file
-    return list_of_digits 
+    return list_of_digits
 
 #Print list from file
 print(read_file("data.txt"))
