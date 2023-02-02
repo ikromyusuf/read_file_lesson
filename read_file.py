@@ -10,9 +10,14 @@ def read_file(filename: str) -> list:
         data (list): A list of lines from the file.
     """
     # Open the file
-    data = list(map(int,open(filename, "r").read().split(',')))
+    f = open("data.txt").read()
+    f = f.split(",")
+    list_of_digits = []
+    for i in f:
+        list_of_digits.append(int(i))
+
     # Read the file
-    return data
+    return list_of_digits
 
 #Print list from file
-print(read_file("read_file_2.txt"))
+print(read_file("data.txt"))
